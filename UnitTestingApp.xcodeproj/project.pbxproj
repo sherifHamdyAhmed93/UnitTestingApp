@@ -20,6 +20,10 @@
 		FAEE53B32DBDB9350002D694 /* UserManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE53B22DBDB9350002D694 /* UserManagerTests.swift */; };
 		FAEE53B52DBDBA910002D694 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE53B42DBDBA910002D694 /* LoginManager.swift */; };
 		FAEE53B72DBDBB050002D694 /* LoginManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE53B62DBDBB050002D694 /* LoginManagerTests.swift */; };
+		FAF5AF1C2DBE34C90066EA16 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5AF1B2DBE34C90066EA16 /* UserService.swift */; };
+		FAF5AF1E2DBE35220066EA16 /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5AF1D2DBE35220066EA16 /* MockUserService.swift */; };
+		FAF5AF212DBE358A0066EA16 /* UserManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5AF202DBE358A0066EA16 /* UserManagerService.swift */; };
+		FAF5AF242DBE35DD0066EA16 /* UserManagerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5AF232DBE35DD0066EA16 /* UserManagerServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		FAEE53B22DBDB9350002D694 /* UserManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerTests.swift; sourceTree = "<group>"; };
 		FAEE53B42DBDBA910002D694 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		FAEE53B62DBDBB050002D694 /* LoginManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManagerTests.swift; sourceTree = "<group>"; };
+		FAF5AF1B2DBE34C90066EA16 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FAF5AF1D2DBE35220066EA16 /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
+		FAF5AF202DBE358A0066EA16 /* UserManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerService.swift; sourceTree = "<group>"; };
+		FAF5AF232DBE35DD0066EA16 /* UserManagerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,8 @@
 		FAEE537B2DBDB33C0002D694 /* UnitTestingApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAF5AF1F2DBE35610066EA16 /* Manager */,
+				FAF5AF1A2DBE34B30066EA16 /* Service */,
 				FAEE537C2DBDB33C0002D694 /* AppDelegate.swift */,
 				FAEE537E2DBDB33C0002D694 /* SceneDelegate.swift */,
 				FAEE53802DBDB33C0002D694 /* ViewController.swift */,
@@ -111,8 +121,34 @@
 				FAEE53AC2DBDB39A0002D694 /* CalculatorTests.swift */,
 				FAEE53B22DBDB9350002D694 /* UserManagerTests.swift */,
 				FAEE53B62DBDBB050002D694 /* LoginManagerTests.swift */,
+				FAF5AF222DBE35BB0066EA16 /* Mock User Service */,
 			);
 			path = UnitTestingAppTests;
+			sourceTree = "<group>";
+		};
+		FAF5AF1A2DBE34B30066EA16 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5AF1B2DBE34C90066EA16 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FAF5AF1F2DBE35610066EA16 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5AF202DBE358A0066EA16 /* UserManagerService.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FAF5AF222DBE35BB0066EA16 /* Mock User Service */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5AF1D2DBE35220066EA16 /* MockUserService.swift */,
+				FAF5AF232DBE35DD0066EA16 /* UserManagerServiceTests.swift */,
+			);
+			path = "Mock User Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,11 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF5AF1C2DBE34C90066EA16 /* UserService.swift in Sources */,
 				FAEE53812DBDB33C0002D694 /* ViewController.swift in Sources */,
 				FAEE53AF2DBDB3AF0002D694 /* Calculator.swift in Sources */,
 				FAEE537D2DBDB33C0002D694 /* AppDelegate.swift in Sources */,
 				FAEE53B12DBDB8A70002D694 /* UserManager.swift in Sources */,
 				FAEE537F2DBDB33C0002D694 /* SceneDelegate.swift in Sources */,
+				FAF5AF212DBE358A0066EA16 /* UserManagerService.swift in Sources */,
 				FAEE53B52DBDBA910002D694 /* LoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +271,8 @@
 				FAEE53B72DBDBB050002D694 /* LoginManagerTests.swift in Sources */,
 				FAEE53942DBDB33F0002D694 /* UnitTestingAppTests.swift in Sources */,
 				FAEE53AD2DBDB39A0002D694 /* CalculatorTests.swift in Sources */,
+				FAF5AF242DBE35DD0066EA16 /* UserManagerServiceTests.swift in Sources */,
+				FAF5AF1E2DBE35220066EA16 /* MockUserService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
